@@ -1,0 +1,14 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          okta:
+            client-id: fake # values don't need to be real to observe the behavior
+            client-secret: fake
+        provider:
+          okta:
+            authorization-uri: https://pivotal.okta.com/oauth2/default/v1/authorize
+            token-uri: https://pivotal.okta.com/oauth2/default/v1/token
+            user-info-uri: https://pivotal.okta.com/oauth2/default/v1/userinfo
+            jwk-set-uri: https://pivotal.okta.com/oauth2/default/v1/keys
